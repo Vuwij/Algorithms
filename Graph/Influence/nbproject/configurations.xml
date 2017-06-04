@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>src/connection.hpp</itemPath>
+      <itemPath>src/constants.hpp</itemPath>
+      <itemPath>src/main.hpp</itemPath>
+      <itemPath>src/social_network.hpp</itemPath>
+      <itemPath>src/user.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>src/connection.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+      <itemPath>src/social_network.cpp</itemPath>
+      <itemPath>src/user.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>/nfs/ug/homes-4/w/wangj261/Documents/ECE345/Influence Calculator/A3.pdf</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>autotester.sh</itemPath>
+      <itemPath>test/data.dat</itemPath>
+      <itemPath>test/facebook_large.txt</itemPath>
+      <itemPath>test/facebook_small.txt</itemPath>
+      <itemPath>get_results.sh</itemPath>
+      <itemPath>test/gnutella.txt</itemPath>
+      <itemPath>test/graph.txt</itemPath>
+      <itemPath>test/wiki_example.txt</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+      </compileType>
+      <item path="src/connection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/connection.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/constants.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/social_network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/social_network.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/user.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="src/connection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/connection.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/constants.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/social_network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/social_network.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/user.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Autotester" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandLine>-std=c++14</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="src/connection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/connection.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/constants.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/social_network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/social_network.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/user.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Valgrind" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <useLinkerLibraries>false</useLinkerLibraries>
+        </ccTool>
+      </compileType>
+      <item path="src/connection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/connection.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/constants.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/social_network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/social_network.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/user.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/user.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

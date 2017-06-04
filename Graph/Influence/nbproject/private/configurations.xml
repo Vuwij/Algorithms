@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/graph 100</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 100</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/graph.txt 100</runcommandpicklistitem>
+          <runcommandpicklistitem>sh autotester.sh</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/graph.txt 3</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" test/graph.txt 3</runcommand>
+        <rundir></rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 3</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 1</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 0.20</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 0.0</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 0.1</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_large.txt 1</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/gnutella.txt 2</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/gnutella.txt 0.5</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_small.txt 0.5</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" test/facebook_large.txt 0.5</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" test/facebook_large.txt 0.5</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Autotester" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>sh autotester.sh</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>sh autotester.sh</runcommand>
+        <rundir></rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Valgrind" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind build/Debug/</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind build/Debug/GNU-Linux</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind ${OUTPUT_PATH}</runcommandpicklistitem>
+          <runcommandpicklistitem>make val &amp;&amp; valgrind influence</runcommandpicklistitem>
+          <runcommandpicklistitem>make val &amp;&amp; valgrind --leak-check=yes influence test/facebook_large.txt 1</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind --leak-check=yes build/influence test/facebook_large.txt 1</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind --leak-check=yes build/influence test/graph.txt 1</runcommandpicklistitem>
+          <runcommandpicklistitem>valgrind --leak-check=yes -v build/influence test/graph.txt 1</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>valgrind --leak-check=yes -v build/influence test/graph.txt 1</runcommand>
+        <rundir></rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

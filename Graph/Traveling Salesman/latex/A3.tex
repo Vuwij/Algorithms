@@ -1,0 +1,43 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+\usepackage{pgfplotstable}
+\usepackage{pgfplots}
+\usepackage{listings}
+\pagestyle{empty}
+
+%opening
+\title{ECE345 A3}
+\author{Jason Wang, Kevin Grafstrum, Oliver S.}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+\section*{Question 8}
+\subsection{Implementation Details}
+	\textbf{How are you representing the graph, using an adjacency matrix or an adjacency list, and why?}\\
+	I am representing the graph using an adjacency list. The social network is a sparse graph and using a adjacency matrix will require memory complexity of $m^2$\\
+	\textbf{Which shortest path algorithm did you use and why?}\\
+	I used Johnson's algorithm to find all the shortest paths, but I modified it so that it only searches the paths up to the required time limit. Johnson's algorithm is basically iterating Djikstra's algorithm through all the nodes. It has a runtime complexity of $O(|V|^{2}\log |V|+|V||E|)$\\
+	
+	\textbf{Graph of load factor vs Collision Count (Experiments)}\\
+	
+	\vspace{1cm}
+	
+	\begin{tikzpicture}[scale = 1.2]
+	\begin{axis}[
+	xlabel=Density,
+	ylabel=Time]
+	
+	\addplot table [x=lf, y=$Run_time$, only marks]{../test/data.dat};
+	%\addplot table[y={create col/linear regression={y=$Run_time$}}]{../test/data.dat};
+	\addlegendentry{Time}
+	\addlegendentry{Regression}
+	
+	\end{axis}
+	\end{tikzpicture}
+	
+	\textbf{Discuss the plot above. What do you observe and why?}\\
+	From the data, the computation time increases quadratically with the density of the graph. This is because Djistra's algorithm runs in $O(|E|+|V|\log |V|)$ but the influence distance will also increase linearly number of edges as more nodes become influenced. This gives an amortized complexity of $O(|E|^2+|E|(|V|\log |V|))$ where the $E$ term dominates and gives a quadratic.
+	
+\end{document}
